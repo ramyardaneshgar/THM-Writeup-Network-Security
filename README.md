@@ -32,7 +32,7 @@ I explored how Snort rules are structured:
 action protocol src_ip src_port -> dst_ip dst_port (options)
 ```
 
-Options define the pattern to match (e.g., content, length, flags) and metadata (e.g., msg, sid, rev).
+Options define the pattern to match (content, length, flags) and metadata (msg, sid, rev).
 
 Example:
 ```
@@ -65,7 +65,7 @@ If the IDS doesn’t reassemble fragmented packets, the malicious payload goes u
 Manipulating content inside packets avoids signature detection without changing attack intent. Techniques include:
 
 - **Base64 Encoding**: Easily decodable but avoids raw byte string matching.
-- **URL Encoding**: Obfuscates special characters (e.g., `%2F` for `/`).
+- **URL Encoding**: Obfuscates special characters (`%2F` for `/`).
 - **Unicode Escaping**: Converts each character into escape sequences (`\u006e\u0063` for "nc").
 - **Encrypted Shells**:
    1. Generate SSL cert with `openssl req`
