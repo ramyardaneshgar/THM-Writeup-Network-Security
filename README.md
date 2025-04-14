@@ -123,9 +123,6 @@ Next-Generation Network IPS (NGNIPS) offers:
 
 Many NGIPS features are now merged into **Next-Gen Firewalls (NGFW)**.
 
-## Task 10: Summary and Lessons Learned
-Throughout this room, I gained operational knowledge on how modern IDS/IPS systems function and where their weaknesses lie. As an analyst, understanding these evasion techniques allows for better detection engineering, rule tuning, and control validation.
-
 # Lessons Learned:
 1. Signature-based IDS is only as strong as its rule set and update frequency.
 2. Minor obfuscation (encoding, fragmentation) is enough to bypass weak rules.
